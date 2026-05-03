@@ -64,23 +64,45 @@ section {
     background: #f4f4f4;
     border-radius: 5px;
 }
-/* Skills Section Styling */
-.skills-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    margin-top: 20px;
+/* --- OVERALL BACKGROUND COLOR --- */
+body {
+    /* This changes the full background behind everything. You can choose a different shade if you like. */
+    background-color: #f0f0f5; /* Very light grey/purple, creates separation from the boxes */
 }
 
+/* --- THE MAIN SECTIONS (So they still look like "cards") --- */
+section {
+    /* If your current section already has this, you might not need to add it, but it's good to double check. */
+    background-color: #ffffff; /* Sections themselves should stay pure white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow makes them pop */
+    margin-bottom: 20px;
+}
+
+/* --- TECHNICAL SKILLS BOXES (Light Blue) --- */
+/* (Targets the individual list items in your skills container) */
 .skills-container ul {
     list-style-type: none;
     padding: 0;
 }
 
 .skills-container li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #ffffff;
+    margin-bottom: 12px;
+    padding: 12px;
+    /* This is the light blue background you wanted for the skills boxes */
+    background: #e1f5fe; 
+    border: 1px solid #b3e5fc; /* Slightly darker border for definition */
+    border-radius: 6px;
+    color: #0d47a1; /* Darker blue text so it is easy to read */
+}
+
+/* --- PROJECTS CARD STYLING --- */
+/* (This should make your existing project cards look good with the new background) */
+.project-card {
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fdfdfd; /* A slightly different white/off-white makes them stand out inside the section */
 }
