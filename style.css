@@ -149,3 +149,29 @@ header nav a,
     color: #000000 !important; /* Forces the text color to be black */
     font-weight: bold;         /* Makes them stand out a bit more */
 }
+/* Add this to your project-card or skills-list items */
+.project-card, .skills-container li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* This is the magic "hover" animation */
+.project-card:hover, .skills-container li:hover {
+    transform: translateY(-5px); /* Lifts the box up by 5 pixels */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+    cursor: pointer;
+}
+ header nav a {
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #007bff !important; /* Changes to blue when you hover */
+} 
+body {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
