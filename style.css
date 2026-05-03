@@ -106,3 +106,38 @@ section {
     margin-bottom: 15px;
     background-color: #fdfdfd; /* A slightly different white/off-white makes them stand out inside the section */
 }
+/* --- 1. Fix "My Name" and Header Navigation --- */
+/* Makes the text black so it's readable */
+header, .navbar, .my-name {
+    color: #000000 !important; /* Forces black text */
+}
+
+/* --- 2. Full Page Background --- */
+body {
+    background-color: #f0f4f8; /* A light, clean background color */
+    color: #333;
+}
+
+/* --- 3. Projects Section Styling --- */
+/* Turns project titles blue and boxes white */
+.project-card h3 {
+    color: #007bff; /* Professional blue color */
+}
+
+.project-card {
+    background-color: #ffffff; /* Clean white for project boxes */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/* --- 4. Technical Skills (Light Blue) --- */
+.skills-container li {
+    background: #e1f5fe; /* Light blue background */
+    border: 1px solid #b3e5fc;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #0d47a1; /* Dark blue text for better contrast */
+}
